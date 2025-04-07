@@ -27,7 +27,7 @@ const app = new Hono({ strict: false }); // match routes w/ or w/o trailing slas
  * -----------------------------------------------------------------------------------------------*/
 app.use(
   "*",
-  cors(),
+  // cors(),
   prettyJSON(),
   logger(),
   rateLimitMiddleware(),
